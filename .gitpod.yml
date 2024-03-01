@@ -5,10 +5,11 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: bundle install
 
   - name: Iniciar servidor web
-    init: bundle exec jekyll serve
+    init: | 
+     bundle install
+     bundle exec jekyll serve
 
 ports:
   - port: 4000
